@@ -14,9 +14,9 @@ require
       'css': './lib/require-css/css.min',
 
       'jquery-dot' : './lib/jquery-dot/jquery.dotdotdot.min',
-      'app': './common/js/app',
-      'main' : './common/js/main',
-      'sub' : './common/js/sub'
+      'app': './resource/js/app',
+      'arteProject' : './resource/js/common',
+      'sub' : './resource/js/sub'
     },
 
     // dependency config
@@ -30,13 +30,13 @@ require
       'jquery-dot' : ['css'],
 
       'app': ['jquery-dot'],
-      'main': ['app'],
+      'arteProject': ['app'],
       'sub' : ['app']
     }
   });
 
-require(['main', 'sub' ], function(main,sub) {
-    $(document).ready(function (main, sub) {
+require(['arteProject', 'sub' ], function(arteProject, sub) {
+    $(document).ready(function (arteProject, sub) {
 
     });// $(document).ready
   }
