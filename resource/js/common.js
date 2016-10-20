@@ -1,9 +1,11 @@
 'use strict';
-define(['main'], function (main) {
+define(['arteProject'], function (arteProject) {
   idx = 0;
+  console.log(urlPath);
 
-  var $btnGroup = $('.btnGroup'),
+  var $headline = $('.headerLine'),
       $mainSlide = $('.mainVisual article'),
+      $btnGroup = $('.btnGroup'),
       $prevText = $('.prev .btnText'),
       $nextText = $('.next .btnText'),
       $modalPage = $('.modalPage'),
@@ -18,12 +20,15 @@ define(['main'], function (main) {
   });
 
   $btnSubMenu.on('click', function () {
-    if(urlPath == '/') arte.subMenuMovement($subMenu, "100%", "340px",300, true);
+    arte.subMenuMovement($subMenu, "100%", "340px" ,300, true);
+    //if(urlPath == '/') arte.subMenuMovement($subMenu, "100%", "340px" ,300, true);
+    //else if(urlPath || '/') arte.subMenuMovement($subMenu, "100%", arte.subMuneSize(windowWID) ,300, true);
     arte.subMenuBg(300);
-
   });
   $subMenuClose.on('click', function () {
-    if(urlPath == '/') arte.subMenuMovement($subMenu, "340px", "100%",300, false);
+    arte.subMenuMovement($subMenu, "340px", "100%" ,300, false);
+    //if(urlPath == '/') arte.subMenuMovement($subMenu, "340px", "100%" ,300, false);
+    //else if(urlPath || '/') arte.subMenuMovement($subMenu, arte.subMuneSize(windowWID), "100%" ,300, false);
     $('.blind').fadeOut(300, function () {
       $(this).remove()
     })

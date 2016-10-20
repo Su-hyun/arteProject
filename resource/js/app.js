@@ -1,8 +1,9 @@
 'use strict';
-var idx,
+var urlPath = location.pathname,
+    windowWID,
+    idx,
     multiIdx = [],
     flag = true,
-    urlPath = location.pathname,
     arte = {
       slideMovement : function (select, index, start, end) {
         var leng = select.length;
@@ -59,6 +60,12 @@ var idx,
         $('body').append('<div class="blind"></div>');
         $('.blind').fadeTo(sec,0.7);
       },
+      subMuneSize : function (win) {
+        var sum = (win - 1100) / 2 + 250;
+        console.log(win);
+        console.log(sum);
+        return sum;
+      },
       multiSlideMovement : function(select, index, start, end){
         var leng = select.length;
         select.eq(index).addClass('on').siblings().removeClass('on');
@@ -73,3 +80,11 @@ var idx,
         }
       }
     };
+
+$(window).on({
+  resize : function () {
+    var winWID = $(window).width();
+    windowWID = winWID;
+  }
+});
+$(window).trigger("resize");
