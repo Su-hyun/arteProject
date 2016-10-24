@@ -1,0 +1,1196 @@
+@charset "utf-8";
+.categoryWrap{
+  /*overflow-x:hidden*/
+}
+.categoryContent div{
+  position:relative;
+}
+.categoryContent .subVisual{
+  width:100%;
+  height:360px;
+  text-align:center;
+}
+.categoryContent .tabsSection{
+  padding-top:64px;
+}
+.categoryContent .makeInquiries{
+  height:200px;
+  background-color:#f7f7f7;
+}
+.makeInquiries .container{
+  padding-top:80px;
+}
+.makeInquiries .container p,
+.makeInquiries .container button{
+  float:left;
+}
+.makeInquiries .container button{
+  display:block;
+  width:136px;
+  height:30px;
+  margin:10px 0 0 23px;
+  padding:0 10px;
+  position:relative;
+  font-size:14px;
+  font-weight:300;
+  line-height: 30px;
+  color:#fff;
+  text-align:left;
+  background-color:#3a3a3a
+}
+.makeInquiries .container button:after{
+  content:"";
+  width:17px;
+  height:11px;
+  position:absolute;
+  top:10px;
+  right:10px;
+  background:url(../img/footerSplite.png) no-repeat 0 -49px;
+}
+
+
+.subVisual img{
+
+}
+.categoryContent .tabsNav{
+  width:100%;
+  height:64px;
+  position:absolute;
+  top:0;
+  left:0;
+  z-index: 10;
+  background-color:#fff;
+  border-bottom:1px solid #e5e5e5
+}
+
+.tabsLink li{
+  float:left;
+  position:relative;
+  text-align:center;
+  line-height:64px;
+}
+.typeList02 li{
+  width:50%;
+}
+.typeList03 li{
+  width:33.33333%
+}
+.typeList04 li{
+  width:25%
+}
+.tabsLink li:hover{
+  color:#f77f44
+}
+.tabsLink a{
+  color:#777;
+}
+.tabsLink li.on:after,
+.tabsLink li:hover:after{
+  content:"";
+  width:100%;
+  height:5px;
+  position:absolute;
+  bottom:0;
+  left:0;
+  background-color:#f77f44
+}
+.tabsLink li.on a,
+.tabsLink li:hover a{
+  color:#f77f44
+}
+.valorTabs li.on:after,
+.valorTabs li:hover:after{
+  background-color:#f1958f
+}
+.valorTabs li.on a,
+.valorTabs li:hover a{
+  color:#f1958f
+}
+.normalTabs li.on:after,
+.normalTabs li:hover:after{
+  background-color:#f5cd60
+}
+.normalTabs li.on a,
+.normalTabs li:hover a{
+  color:#f5cd60
+}
+.conciertoTabs li.on:after,
+.conciertoTabs li:hover:after{
+  background-color:#e1c1df
+}
+.conciertoTabs li.on a,
+.conciertoTabs li:hover a{
+  color:#e1c1df
+}
+
+.contentWrap{
+  position:relative;
+}
+.tabsFirstText p{
+  float:left;
+  font-size:15px;
+  color:#777;
+  line-height:22px;
+  letter-spacing: -0.5px;
+}
+.highLight{
+  color:#fff;
+}
+#tabsSecond,
+#tabsThird{
+  position:relative;
+}
+.categoryContent .btnGroup{
+  position:static;
+}
+.btnGroup button{
+  width:50px;
+  height:100px;
+  margin-top:-50px;
+  position:absolute;
+  top:50%;
+}
+.btnGroup .next{
+  right:0;
+  background:url(../img/iconArrowRightTypeB.png) no-repeat center;
+}
+.btnGroup .prev{
+  left:0;
+  background:url(../img/iconArrowLeftTypeB.png) no-repeat center;
+}
+.arrowType2 .next{
+  right:0;
+  background:url(../img/iconArrowRightTypeW.png) no-repeat center;
+}
+.arrowType2 .prev{
+  left:0;
+  background:url(../img/iconArrowLeftTypeW.png) no-repeat center;
+}
+/* nuevo */
+.highLight.nuevo{
+  padding:2px 3px;
+  background-color:#f77f44
+}
+.highLight.nuevoType2{
+  color:#f77f44
+}
+#tabsFirst.tabsNuevo{ height:600px; background:url(../../category/arteNuevo/img/tabsFirstBg.png) no-repeat 0 0; }
+#tabsFirst.tabsNuevo .container{ background:url(../../category/arteNuevo/img/tabsFirstInnerImg.png) no-repeat right 0; }
+#tabsFirst.tabsNuevo .tabsTitleText{
+  padding-top:150px;
+}
+#tabsFirst.tabsNuevo .contentWrap{
+  margin-top:50px;
+}
+#tabsFirst.tabsNuevo .tabsFirstText p{
+  margin-left:55px;
+}
+#tabsFirst.tabsNuevo .tabsFirstText p:first-child{
+  margin-left:0;
+}
+#tabsSecond.tabsNuevo{ height:650px; color:#898686; background:url(../../category/arteNuevo/img/tabsSecondBg.jpg) no-repeat 0 0;}
+#tabsSecond.tabsNuevo .tabsTitleText{
+  float:right;
+  padding-top:130px;
+}
+#tabsSecond.tabsNuevo .tabsTitleText p{
+  margin-top:40px;
+  line-height:22px;
+}
+#tabsSecond.tabsNuevo .contentWrap{
+  padding-top:70px;
+}
+#tabsSecond.tabsNuevo dl{
+  width:630px;
+  padding:34px 0 35px 120px;
+  letter-spacing: -0.5px;
+  border-top:1px solid #3e312f
+}
+#tabsSecond.tabsNuevo .creative{
+  border-top:0 none;
+  background:url(../../category/arteNuevo/img/creativeDl1.png) no-repeat 0 center;
+}
+#tabsSecond.tabsNuevo .arts{
+  background:url(../../category/arteNuevo/img/creativeDl2.png) no-repeat 0 center;
+}
+#tabsSecond.tabsNuevo .sensibility{
+  background:url(../../category/arteNuevo/img/creativeDl3.png) no-repeat 0 center;
+}
+#tabsSecond.tabsNuevo dt{
+  margin-bottom:10px;
+  font-size:16px;
+  font-weight:bold;
+  color:#fff;
+}
+#tabsSecond.tabsNuevo dd{
+  font-size:14px;
+  line-height: 20px;
+}
+
+#tabsThird.tabsNuevo{ height:1030px;}
+#tabsThird.tabsNuevo .container{
+  padding-top: 80px;
+}
+#tabsThird.tabsNuevo .tabsTitleText{
+  text-align:center;
+  margin-bottom:40px;
+}
+#tabsThird.tabsNuevo .powerUpList{
+  width:935px;
+  height:467px;
+  margin:0 auto;
+  position:relative;
+  background:url(../../category/arteNuevo/img/powerListBg.png) no-repeat 0 0;
+}
+#tabsThird.tabsNuevo .powerUpList li{
+  font-size:30px;
+  position:absolute;
+}
+#tabsThird.tabsNuevo .powerUpList .powerLi1{ top: 140px ; left:104px;}
+#tabsThird.tabsNuevo .powerUpList .powerLi2{ top: 298px; left:262px;}
+#tabsThird.tabsNuevo .powerUpList .powerLi3{ top: 140px; left:419px;}
+#tabsThird.tabsNuevo .powerUpList .powerLi4{ top: 298px; right:270px;}
+#tabsThird.tabsNuevo .powerUpList .powerLi5{ top: 140px ; right: 92px;}
+#tabsThird.tabsNuevo .powerUpList .powerLi6{ top: 295px; left: -85px;}
+#tabsThird.tabsNuevo .powerUpList .powerLi7{ top: 295px; right: -45px;}
+#tabsThird.tabsNuevo .creativeClash{
+  margin:67px 0 0 60px;
+}
+#tabsThird.tabsNuevo .creativeClash h3{
+  float:left;
+  text-align:right;
+  font-size:30px;
+  line-height: 34px;
+}
+#tabsThird.tabsNuevo .creativeClash span{
+  display:block;
+}
+#tabsThird.tabsNuevo .creativeClash ul{
+  float:left;
+  margin-left:35px;
+  font-size:16px;
+  line-height: 26px;
+  color:#737373;
+}
+#tabsFourth.tabsNuevo{ height:600px; background:url(../../category/arteNuevo/img/tabsFrouthBg.jpg) no-repeat 0 0;}
+#tabsFourth.tabsNuevo .tabsTitleText{
+  float:left;
+  padding-top:82px;
+}
+#tabsFourth.tabsNuevo .contentWrap{
+  float:right;
+}
+#tabsFourth.tabsNuevo .contentWrap li{
+  float:left;
+}
+#tabsFourth.tabsNuevo .programValor{
+  margin-top:-40px;
+}
+#tabsFourth.tabsNuevo .programNormal{
+  margin-top:30px;
+}
+#tabsFourth.tabsNuevo .programConcierto{
+  margin-top:-20px;
+}
+
+/* valor */
+.highLight.valor{
+  padding:2px 3px;
+  background-color:#f1958f
+}
+.highLight.valorType2{
+  color:#f1958f
+}
+#tabsFirst.tabsValor{ height:680px; background:url(../../category/arteValor/img/tabsFirstBg.png) no-repeat center 0;}
+#tabsFirst.tabsValor .container{ background:url(../../category/arteValor/img/tabsFirstInnerImg.png) no-repeat right center; }
+#tabsFirst.tabsValor .tabsTitleText{
+  padding-top:120px;
+  margin-bottom:45px;
+}
+#tabsFirst.tabsValor .contentWrap{
+  position:relative;
+}
+#tabsFirst.tabsValor .contentWrap p{
+  float:none;
+  width:340px;
+  margin-bottom:20px;
+  text-align:justify;
+  word-break: keep-all;
+}
+#tabsFirst.tabsValor .positionChange{
+  position:absolute;
+  left:380px;
+}
+.contentWrap .positionChange.type1{ top: 0}
+.contentWrap .positionChange.type2{ top: 152px}
+#tabsSecond.tabsValor{ height:750px; background:url(../../category/arteValor/img/tabsSecondBg.jpg) no-repeat 0 0;}
+#tabsSecond.tabsValor .tabsTitleText{
+  margin-bottom:35px;
+  padding-top:80px;
+  text-align:center;
+}
+#tabsSecond.tabsValor .tabsTitleText p,
+#tabsSecond.tabsConcierto .tabsTitleText p{
+  margin-top:26px;
+  font-size:15px;
+  line-height: 20px;
+  color:#949691
+}
+#tabsSecond.tabsValor .workFlowList,
+.process{
+  height:374px;
+  position:relative;
+  text-align:center;
+}
+#tabsSecond.tabsValor .workFlowList li,
+.process li{
+  width:374px;
+  height:374px;
+  padding-top:55px;
+  position:absolute;
+  top:0;
+  color:#fff;
+  background:url(../../category/arteValor/img/tabsSecondLiBg1.png) no-repeat 0 0;
+}
+.process li{
+  background:url(../../category/arteConcierto/img/tabsListBg1.png) no-repeat 0 0;
+}
+#tabsSecond.tabsValor .workFlowList li:nth-child(even){
+  background:url(../../category/arteValor/img/tabsSecondLiBg2.png) no-repeat 0 0;
+}
+.process li:nth-child(even){
+  background:url(../../category/arteConcierto/img/tabsListBg2.png) no-repeat 0 0;
+}
+#tabsSecond.tabsValor .workFlowLi1,
+.process .processLi1{ left:-30px; z-index: 4}
+#tabsSecond.tabsValor .workFlowLi2,
+.process .processLi2{ margin-right:-55px; right: 50%; z-index:3 }
+#tabsSecond.tabsValor .workFlowLi3,
+.process .processLi3{ margin-left:-55px; left:50%; z-index:2 }
+#tabsSecond.tabsValor .workFlowLi4,
+.process .processLi4{ right:-30px; z-index:1 }
+
+#tabsSecond.tabsValor .workFlowList dt{
+  margin-bottom:10px;
+  font-size:20px;
+}
+#tabsSecond.tabsValor .workFlowList .imgWrap{
+  display:block;
+  margin-bottom:5px;
+}
+#tabsSecond.tabsValor .workFlowList dd{
+  font-size:14px;
+  line-height: 20px;
+  letter-spacing: -0.5px;
+}
+#tabsSecond.tabsValor .bridge,
+#tabsSecond.tabsConcierto .bridge{
+  padding-top:93px;
+  position:absolute;
+  right:0;
+  bottom:0;
+  z-index: 1;
+  background:url(../img/categoryBridge.png) no-repeat center 0;
+}
+#tabsSecond.tabsValor .workFlowLi2 .bridge{
+  right:29px;
+}
+#tabsThird.tabsValor{ height:1115px; }
+#tabsThird.tabsValor .contentWrap{
+  height:100%;
+  padding-top:138px;
+}
+#tabsThird.tabsValor .experienceProgram{
+  width:100%;
+  height:100%;
+  position:relative;
+}
+#tabsThird.tabsValor .experienceProgram > li{
+  display:none;
+  width:100%;
+  height:100%;
+  position:absolute;
+}
+#tabsThird.tabsValor .experienceProgram li.on{
+  display:block;
+}
+#tabsThird.tabsValor  .experienceImgWrap{
+  float:left;
+  width:323px;
+  height:410px;
+  border:4px solid #ee7e77
+}
+#tabsThird.tabsValor  .experienceImgWrap img{
+  width:323px;
+  height:410px;
+  margin:-29px 0 0 29px;
+}
+#tabsThird.tabsValor .experienceTextArea{
+  float:left;
+  margin-left:100px;
+  padding-top:40px;
+}
+#tabsThird.tabsValor .experienceTextArea h2{
+  font-size:66px;
+}
+#tabsThird.tabsValor .experienceTextArea small{
+  display:block;
+  margin-top:10px;
+  font-size:18px;
+  font-weight:300;
+  color:#777;
+}
+#tabsThird.tabsValor .experienceTextArea dl{
+  margin-top:90px;
+}
+#tabsThird.tabsValor .experienceTextArea dt{
+  margin-bottom:10px;
+  font-weight:800;
+  color:#ee7e77
+}
+#tabsThird.tabsValor .experienceTextArea dd,
+#tabsThird.tabsValor .programList dd{
+  font-size:15px;
+  line-height: 22px;
+  color:#777;
+}
+#tabsThird.tabsValor .programList{
+  margin-top:85px;
+  text-align:center;
+}
+#tabsThird.tabsValor .programList li{
+  float:left;
+  width:25%;
+  height:auto;
+}
+#tabsThird.tabsValor .programList .imgWrap{
+  display:block;
+  margin-bottom:20px;
+}
+#tabsThird.tabsValor .programList dt{
+  margin-bottom:10px;
+  font-size:20px;
+  font-weight:800;
+  color:#000;
+}
+#tabsThird.tabsValor .programList dd{
+  height:75px;
+}
+#tabsThird.tabsValor .programList .valorType2,
+#tabsThird.tabsValor .programNum .valorType2{
+  color:#f1958f;
+}
+#tabsThird.tabsValor .experienceResult{
+  font-size:18px;
+  text-align:center;
+  color:#777;
+}
+#tabsThird.tabsValor .programNum{
+  width:100%;
+  height:55px;
+  position:absolute;
+  top:35px;
+  text-align:right;
+  font-size:55px;
+}
+#tabsThird.tabsValor .programNum span{
+  display:inline-block;
+  height:55px;
+  vertical-align: top;
+  color:#ddd;
+}
+#tabsThird.tabsValor .programNum .slash{
+  width:24px;
+  background:url(../../category/arteValor/img/slash.png) no-repeat center bottom;
+}
+
+  /* normal */
+.highLight.normal{
+  padding:2px 3px;
+  background-color:#f5cd60
+}
+.highLight.normalType2{
+  color:#f5cd60
+}
+.highLight.normalTypeHeading{
+  display:block;
+  font-size:66px;
+  font-weight:300;
+  color:#f5cd60
+}
+#tabsFirst.tabsNormal{ height:1002px; background:url(../../category/arteNormal/img/tabsFirstBg.png) no-repeat center 0;}
+#tabsFirst.tabsNormal .tabsTitleText{
+  padding-top:88px;
+  margin-bottom:45px;
+  text-align:center;
+}
+#tabsFirst.tabsNormal .contentWrap p{
+  float:none;
+  text-align:center;
+}
+#tabsFirst.tabsNormal .tabsFirstImg{
+  margin-top:60px;
+  text-align:center;
+}
+#tabsFirst.tabsNormal .tabsFirstImg img{
+  margin-left:30px;
+}
+#tabsFirst.tabsNormal .tabsFirstImg img:first-child{
+  margin-left:0;
+}
+#tabsSecond.tabsNormal{ background:url(../../category/arteNormal/img/tabsSecondBg.jpg) no-repeat 0 0;}
+#tabsSecond.tabsNormal .tabsTitleText,
+#tabsThird.tabsNormal .tabsTitleText,
+#tabsSecond.tabsConcierto .tabsTitleText,
+#tabsThird.tabsConcierto .tabsTitleText{
+  text-align:center;
+}
+#tabsSecond.tabsNormal .tabsSecondList{
+  padding-bottom:130px;
+}
+
+#tabsThird.tabsNormal{ background:url(../../category/arteNormal/img/tabsThirdBg.png) no-repeat 0 0;}
+#tabsThird.tabsNormal .tabsThirdList{
+  padding-bottom:120px;
+}
+/* concierto */
+.highLight.concierto{
+  padding:2px 3px;
+  background-color:#e1c1df
+}
+.highLight.conciertoType2{
+  color:#e1c1df
+}
+.highLight.conciertoTypeHeading{
+  display:block;
+  font-size:66px;
+  font-weight:300;
+  color:#e1c1df
+}
+#tabsFirst.tabsConcierto{ height:680px; background:url(../../category/arteConcierto/img/tabsFirstBg.png) no-repeat center 0;}
+#tabsFirst.tabsConcierto .container{ background:url(../../category/arteConcierto/img/tabsFirstInnerImg.png) no-repeat right center;}
+#tabsFirst.tabsConcierto .tabsTitleText{
+  padding-top:120px;
+  margin-bottom:50px;
+}
+#tabsFirst.tabsConcierto .contentWrap{
+  width:640px;
+}
+#tabsFirst.tabsConcierto .contentWrap p{
+  margin:0 0 23px 50px;
+}
+#tabsFirst.tabsConcierto .contentWrap p:first-child{
+  margin-left:0;
+}
+#tabsSecond.tabsConcierto{ background:url(../../category/arteConcierto/img/tabsSecondBg.jpg) no-repeat 0 0;}
+#tabsSecond.tabsConcierto .container{
+  position:relative;
+}
+#tabsSecond.tabsConcierto .tabsSecondList,
+#tabsThird.tabsConcierto .tabsThirdList{
+  height:100%;
+  padding-bottom:80px;
+}
+#tabsSecond.tabsConcierto .planList{
+  margin-top:50px;
+  text-align:center;
+}
+#tabsSecond.tabsConcierto .planList li{
+  display:inline-block;
+  width:164px;
+  height:164px;
+  margin:0 5px;
+  padding-top:30px;
+  vertical-align: top;
+  color:#fff;
+  text-align:center;
+  background:url(../../category/arteConcierto/img/tabsListCircle.png) no-repeat 0 0;
+}
+#tabsSecond.tabsConcierto .planList .imgWrap{
+  display:block;
+  margin-bottom:20px;
+}
+#tabsSecond.tabsConcierto .contentWrap h3{
+  margin:60px 0 40px;
+  font-size:42px;
+  color:#fff;
+  text-align:center;
+  letter-spacing: -0.5px;
+}
+#tabsSecond.tabsConcierto .tabsInnerList{
+  width:546px;
+  height:374px;
+  margin:0 auto;
+  position:relative;
+}
+#tabsSecond.tabsConcierto .tabsInnerList li{
+  width:374px;
+  height:374px;
+  padding-top:137px;
+  position:absolute;
+  top:0;
+  text-align:center;
+  background:url(../../category/arteConcierto/img/tabsListBg1.png)
+}
+#tabsSecond.tabsConcierto .tabsInnerLi1{ margin-left:-187px; left:0; }
+#tabsSecond.tabsConcierto .tabsInnerList .tabsInnerLi2{
+  margin-left:-187px;
+  left:50%;
+  background:url(../../category/arteConcierto/img/tabsListBg2.png)
+}
+#tabsSecond.tabsConcierto .tabsInnerLi3{  margin-right:-187px; right:0;}
+#tabsSecond.tabsConcierto .tabsInnerList dt{
+  margin-bottom:20px;
+  font-size:30px;
+  font-weight:800;
+}
+#tabsSecond.tabsConcierto .tabsInnerList dd{
+  font-size:15px;
+  color:#fff;
+  line-height: 22px;
+  letter-spacing: -0.5px;
+}
+#tabsSecond.tabsConcierto .tabsInnerList .bridge{
+  padding-top:93px;
+  right:-47px;
+  color:#a7a7a7
+}
+.conciertoDot{
+  position:absolute;
+  top:135px;
+  right:0
+}
+.conciertoDot li{
+  display:inline-block;
+  width:10px;
+  height:10px;
+  margin:0 3px;
+  background:url(../../category/arteConcierto/img/dot.png) no-repeat -17px 0px;
+}
+.conciertoDot li.on{
+  background:url(../../category/arteConcierto/img/dot.png) no-repeat 0 0px;
+}
+.process .imgWrap{
+  display:block;
+  margin-bottom:20px;
+}
+.process dt{
+  font-size:25px;
+  color:#000;
+}
+.process dd{
+  margin-top:10px;
+  font-size:14px;
+  letter-spacing: -0.5px;
+  line-height: 20px;
+}
+.process.type2{
+  width:870px;
+  height:250px;
+  margin:60px 0 35px 230px;
+}
+
+ .process.type2 li{
+  width:250px;
+  height:250px;
+   font-size:27px;
+   font-weight:bold;
+   letter-spacing: -0.5px;
+   color:#000;
+  background:url(../../category/arteConcierto/img/tabsListBgS1.png) no-repeat 0 0;
+}
+.process.type2 li:nth-child(even){
+  background:url(../../category/arteConcierto/img/tabsListBgS2.png) no-repeat 0 0;
+}
+.process.type2 .processLi1{ left:0; z-index: 1 }
+.process.type2 .processLi2{ margin-right:-22px; z-index:2;}
+.process.type2 .processLi3{ margin-left:-28px; z-index: 3}
+.process.type2 .processLi4{ right:0; z-index: 4}
+.processPlan .imgWrap{
+  display:block;
+}
+.processPlan .imgWrap img{
+  margin-bottom:25px;
+}
+.processPlan> div{
+  float:left;
+  margin-right:30px;
+}
+.processPlan > dl{
+  float:left;
+  margin-left:60px;
+  color:#fff;
+}
+.processPlan > dl:nth-of-type(1){
+  margin-left:0;
+}
+.processPlan dt{
+  margin-bottom:25px;
+  font-size:20px;
+  line-height: 25px;
+}
+.processPlan dd{
+  font-size:15px;
+  line-height: 25px;
+}
+.managementEx{
+  margin-top:45px;
+}
+.managementEx ul{
+  float:left;
+  margin-left:120px;
+  color:#fff;
+  text-align:right;
+}
+.managementEx li{
+  font-size:22px;
+  line-height: 35px;
+  letter-spacing: -0.5px;
+}
+.managementEx div{
+  float:right;
+}
+#tabsThird.tabsConcierto{ background:url(../../category/arteConcierto/img/tabsThirdBg.png) no-repeat 0 0;}
+
+
+
+.ourStory{
+  padding-top:82px;
+  padding-bottom:30px;
+}
+.ourStory .tabsTitleText{
+  height:118px;
+}
+.ourStoryBoard .search{
+  position:absolute;
+  right:0;
+  top:-41px;
+}
+.listWrap{
+  margin-top:37px;
+}
+.galleryWrap{
+  width:1124px;
+}
+.galleryWrap li{
+  float:left;
+  width:257px;
+  height:323px;
+  margin:0 24px 25px 0;
+  cursor:pointer;
+}
+.galleryWrap .thumb{
+  height:257px;
+  margin-bottom:8px;
+}
+.galleryWrap .thumb img{
+  width:100%;
+  height:100%;
+}
+.galleryWrap li p{
+  font-weight:bold;
+  line-height: 36px;
+}
+.galleryWrap .galleryDate{
+  font-size:14px;
+  color:#aaa;
+}
+.modalPage{
+  display:none;
+  width:1000px;
+  height:1090px;
+  margin-left:-500px;
+  position:absolute;
+  top:70px;
+  left:50%;
+  z-index: 5;
+  background-color:#fff;
+}
+.modalPage .modalHeader{
+  height:56px;
+  padding:0 56px;
+  background-color:#f77f44;
+}
+.modalHeader h3{
+  line-height:56px;
+  font-size:26px;
+  color:#fff;
+  font-weight:normal;
+}
+.modalPage .modalBody{
+  padding:56px;
+  border:1px solid #ccc;
+  border-top:0 none;
+}
+.modalBody .imgContent{
+  border-bottom:1px solid #ccc;
+}
+.imgContent img{
+  width:100%;
+  height:560px;
+}
+.imgContent p{
+  height:149px;
+  padding:40px 0;
+  line-height:23px;
+  overflow-y: auto;
+}
+.btnWrap .headerPosition{
+  width: 56px;
+  height:56px;
+  position:absolute;
+  top:0;
+  right:0;
+  background:url(../../category/ourStory/img/btnClose.png) no-repeat 0 0;
+}
+.btnWrap{
+  padding:30px;
+  text-align:center;
+}
+.btnWrap .bodyPosition{
+  width:239px;
+  height:56px;
+  line-height:56px;
+  font-size:15px;
+  color:#fff;
+  background-color:#f77f44;
+}
+.galleryList{
+  border-top:1px solid #ccc;
+  border-bottom:1px solid #ccc;
+  overflow:hidden;
+}
+.galleryList li{
+  height:45px;
+  line-height: 45px;
+  font-size:0;
+  border-top:1px solid #ebebeb;
+}
+.galleryList li:first-child{
+  border-top:0 none;
+}
+.galleryList span{
+  display:inline-block;
+  height:100%;
+  font-size:15px;
+  vertical-align: top;
+}
+.galleryList .galleryListNav{
+  width:123px;
+  text-align:center;
+  color:#000;
+  background-color:#f5f5f5
+}
+.galleryList .galleryListTitle{
+  padding:0 15px;
+  width:760px;
+  color:#666;
+}
+.paging{
+  font-size:20px;
+  text-align:center;
+}
+.paging a{
+  display:inline-block;
+  width:30px;
+  line-height: 50px;
+  vertical-align: middle;
+  color:#aaa;
+}
+.paging a:hover{
+  color:#f77f44
+}
+.tabsListWrap{
+  padding-top:80px;
+}
+.tabsListWrap > li{
+  display:none;
+  cursor:pointer;
+}
+.tabsListWrap > li.on{
+  display:block;
+}
+.ourStoryNotice{
+  margin-bottom:30px;
+}
+.listWrap > li{
+  border-bottom:1px solid #262626;
+  cursor:pointer;
+}
+.listWrap > li:first-child{
+  border-top:1px solid #262626;
+}
+.listWrap .titleLine{
+  height:67px;
+  line-height: 67px;
+  font-size:20px;
+  /* color:#fff; */
+}
+.wrapStyle .titleLine{
+  padding:0 40px;
+  color:#fff;
+  background:url(../img/iconArrowDownTypeW.png) no-repeat right 30px center;
+}
+.wrapStyle li.on .titleLine{
+  color:#323232;
+  background:#f5cd60 url(../img/iconArrowUpTypeB.png) no-repeat right 30px center;
+}
+.wrapStyle.type2 .titleLine{
+  padding:0 40px;
+  color:#323232;
+  background:url(../img/iconArrowDownTypeB.png) no-repeat right 30px center;
+}
+.wrapStyle.type2 li.on .titleLine{
+  color:#FFF;
+  background:#f5cd60 url(../img/iconArrowUpTypeW.png) no-repeat right 30px center;
+}
+
+.ourStoryNotice li.on .titleLine{
+  color:#323232;
+  background-color:#f77f44
+}
+.titleLine span{
+  float:left;
+  display:block;
+  text-align:center;
+}
+.titleLine .boardNum{
+  width:64px;
+
+}
+.titleLine .noticeTitle{
+  width:945px;
+  text-align:left;
+}
+.titleLine .updateDate{
+  width:90px;
+}
+.noticeContext{
+  height:0;
+  overflow:hidden;
+}
+.arteNormalExperience .noticeContext{
+  background-color:#f7f7f7;
+}
+.noticeContext > p,
+.noticeContext > dl{
+  padding:39px;
+  color:#999;
+  border-top:1px solid #313131
+}
+.listWrap li:first-child .noticeContext{
+  height:auto;
+}
+.listWrap dt{
+  float:left;
+  color:#fff;
+  line-height:25px;
+}
+.listWrap.type2 dt{
+  color:#252525
+}
+.listWrap dd{
+  margin:0 0 20px 180px;
+  font-size:15px;
+  line-height:25px;
+  letter-spacing: -0.5px;
+}
+.listWrap dl li{
+  position:relative;
+}
+.listWrap dl li:before{
+  content:"・";
+  position:absolute;
+  left:-17px;
+}
+.listWrap .innerTableWrap table{
+  border:1px solid #dfdfdf;
+}
+.listWrap .innerTableWrap tr{
+  border-top:1px solid #dfdfdf;
+}
+.listWrap .innerTableWrap tr:first-child{
+  border:0 none;
+}
+.listWrap .innerTableWrap th{
+  color:#fff;
+  background-color:#929292
+}
+.listWrap .innerTableWrap td{
+  height:37px;
+  padding:5px 15px;
+  text-align:left;
+  border-left:1px solid #dfdfdf;
+}
+.listWrap .innerTableWrap p{
+  margin-top:20px;
+}
+.categoryContent .forTop{
+  display:none;
+  position:absolute;
+  top:0;
+  right: 50px;
+}
+.forTop a{
+  opacity: 0;
+}
+
+.categoryContent .makeInquiriesForm{
+  height:auto;
+  position:absolute;
+  top:unset;
+  bottom:30px;
+}
+.makeInquiriesForm form{
+  text-align:center;
+}
+.makeInquiriesForm .modalHeader,
+.makeInquiriesForm .agreement,
+.makeInquiriesForm .formLine{
+  text-align:left;
+}
+.agreement p{
+  font-size:16px;
+}
+.agreement .preWrap{
+  margin-top:15px;
+  padding:13px 23px;
+  border:1px solid #ddd;
+}
+.agreement pre{
+  font-size:14px;
+  overflow:hidden;
+}
+.agreement span{
+  display:block;
+  margin:10px 10px;
+  position:relative;
+  text-align:right;
+}
+.agreement label{
+  position:relative;
+}
+.agreement input{
+  width:0;
+  height:0;
+  position:absolute;
+  z-index: -1;
+}
+.agreement label:before{
+  content:"";
+  display:inline-block;
+  width:19px;
+  height:19px;
+  margin-right:5px;
+  vertical-align: middle;
+  border:1px solid #9d9d9d
+}
+.agreement input:checked + label:after{
+  content:"";
+  width:9px;
+  height:9px;
+  position:absolute;
+  top:10px;
+  left:5px;
+  background-color:#f77f44;
+}
+.formLine{
+  height:37px;
+  margin-bottom:20px;
+  letter-spacing: -0.3px;
+}
+.formLine > label{
+  float:left;
+  width:100px;
+  height:100%;
+  font-size:16px;
+  line-height: 37px;
+}
+.iconStar > label:before{
+  content:"";
+  display:inline-block;
+  width:6px;
+  height:6px;
+  margin-right:4px;
+  vertical-align: 4px;
+  background:url(../img/iconStar.png) no-repeat 0 0;
+}
+.textAreaWrap{
+  height:120px;
+}
+.textAreaWrap > label{
+  line-height: 120px;
+}
+.textAreaWrap textarea{
+  width:100%;
+  padding:5px;
+}
+.formLine .inputArea{
+  height:100%;
+  margin-left:100px;
+}
+.formLine input{
+  padding:3px 10px;
+}
+.formLine input,
+.formLine select{
+  width:233px;
+  height:100%;
+  border:1px solid #ccc;
+}
+.resizeEl input,
+.resizeEl select{
+  width:114px;
+}
+.viewPath{
+  margin-bottom:60px;
+}
+.viewPath .inputArea > div{
+  display:inline-block;
+  height:100%;
+  margin-left:20px;
+  position:relative;
+  vertical-align: middle;
+}
+.viewPath input{
+  width:auto;
+  vertical-align: middle;
+}
+.viewPath .inputArea input[type="text"]{
+  width:150px;
+}
+.viewPath .inputArea input[type="checkbox"]{
+  width:0;
+  height:0;
+  position:absolute;
+  z-index: -1;
+}
+.viewPath .inputArea > div label{
+  height:37px;
+  line-height: 37px;
+}
+.viewPath .inputArea > div > label:before{
+  content:"";
+  display:inline-block;
+  width:19px;
+  height:19px;
+  margin-right:5px;
+  vertical-align: middle;
+  border:1px solid #9d9d9d
+}
+.viewPath .inputArea input:checked + label:after{
+  content:"";
+  width:9px;
+  height:9px;
+  position:absolute;
+  top:16px;
+  left:5px;
+  background-color:#f77f44;
+}
+.formLine:after{content:"";display:block;clear:both}
+.makeInquiriesForm fieldset > input[type="submit"]{
+  width:240px;
+  height:56px;
+  color:#fff;
+  background-color:#f77f44;
+}

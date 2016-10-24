@@ -1,22 +1,55 @@
 'use strict';
 define(['arteProject'], function (arteProject) {
-  idx = 0;
+
   console.log(urlPath);
 
-  var $headline = $('.headerLine'),
+  var $body = $('body'),
       $mainSlide = $('.mainVisual article'),
       $btnGroup = $('.btnGroup'),
-      $prevText = $('.prev .btnText'),
-      $nextText = $('.next .btnText'),
+      $prevImg = $('.prev img'),
+      $nextImg = $('.next img'),
       $modalPage = $('.modalPage'),
       $btnSubMenu = $('.btnSubMenu'),
       $subMenu = $('.subMenu'),
       $subMenuClose = $('.subMenuClose'),
-      textArry = [];
+      $toggleMune = $('.toggleMenu'),
+      $familyList = $('.familyList'),
+      textImgArray = ['./main/img/arteValor.png','./main/img/arteNormal.png','./main/img/arteConcierto.png'];
+  idx = 0;
 
-  $mainSlide.each(function(i,e){
-    var titText = $mainSlide.eq(i).find('h1').text();
-    textArry.push(titText)
+  $(window).on({
+    resize : function(){
+     var winHEI = $(this).height(),
+         $article = $('#article');
+
+      if(urlPath === '/') $article.css('height',winHEI - 90);
+
+    }
+  });
+  $(window).trigger("resize");
+
+  var interValFn = function () {
+    if(flag == true){
+      flag = false;
+      arte.slideMovement($mainSlide, idx, 0, "-100%");
+      idx++;
+      arte.slideMovement($mainSlide, idx, "100%", 0);
+      if(urlPath === '/') arte.btnText(textImgArray, $prevImg, $nextImg, idx);
+    }
+  };
+
+  if(urlPath === '/') var rel = setInterval(interValFn,5000);
+
+  $body.on('click', 'a', function (e) {
+    var $this = $(this);
+    if($this.attr('href') === "#"){
+      e.preventDefault();
+      return false;
+    }else{ }
+  });
+
+  $toggleMune.on('click', function () {
+    $familyList.slideToggle();
   });
 
   $btnSubMenu.on('click', function () {
@@ -42,7 +75,7 @@ define(['arteProject'], function (arteProject) {
         arte.slideMovement($mainSlide, idx, 0, "-100%");
         idx++;
         arte.slideMovement($mainSlide, idx, "100%", 0);
-        arte.btnText(textArry, $prevText, $nextText, idx);
+        if(urlPath === '/') arte.btnText(textImgArray, $prevImg, $nextImg, idx);
       }
     }else if($this.is('.prev')){
       if(flag == true){
@@ -50,7 +83,7 @@ define(['arteProject'], function (arteProject) {
         arte.slideMovement($mainSlide, idx, 0, "100%");
         idx --;
         arte.slideMovement($mainSlide, idx, "-100%", 0);
-        arte.btnText(textArry, $prevText, $nextText, idx);
+        if(urlPath === '/') arte.btnText(textImgArray, $prevImg, $nextImg, idx);
       }
     }else if($this.is('.btnModal')) $modalPage.show()
   });

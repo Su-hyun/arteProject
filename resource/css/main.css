@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-header{
+#header{
   width:100%;
   position:fixed;
   top:0;
@@ -17,26 +17,24 @@ header{
   margin-left:110px;
 }
 .headerLine nav{
-  display:block;
   float:right;
-  margin-top:30px;
   margin-left:0;
 }
 .lnb .lnbSubBtn {
+  margin-top:6px;
   position:static;
 }
 
-article{
+#article{
   width:100%;
   min-width:1185px;
-  height:calc(100% - 90px);
   overflow:hidden;
 }
 .subMenu{
   left:340px;
 }
 .mainVisual,
-.mainVisual article{
+.mainVisual .article{
   width:100%;
   height:100%;
   font-size:0;
@@ -45,15 +43,16 @@ article{
 .mainVisual{
   position:relative;
 }
-.mainVisual article{
+.mainVisual .article{
   display:none;
   position:absolute;
   top:0;
   left:0;
 }
-.mainVisual article:first-child{
+.mainVisual .article:first-child{
   display:block;
 }
+/* 이미지로 대체
 .visualText{
   display:inline-block;
   padding:30px 0;
@@ -98,6 +97,7 @@ article{
   position:relative;
   font-size:160px;
 }
+*/
 .btnGroup button{
   width:56px;
   height:152px;
@@ -109,39 +109,139 @@ article{
 }
 .btnGroup .prev{
   left:0;
+  text-align: right;
   background:#000 url(../../main/img/iconPrev.png) no-repeat 4px center;
   border-right:3px solid #d59fd1
 }
+.btnGroup .prev img{
+  margin-right:15px;
+}
 .btnGroup .next{
   right:0;
+  text-align: left;
   border-left:3px solid #f6db7d
 }
-.btnGroup .btnText{
-  display:block;
-  width:152px;
-  padding:3px;
-  color:#fff;
-  line-height:1.5;
-  -webkit-transform:translateX(-40px) rotate(90deg);
-  -moz-transform:translateX(-40px) rotate(90deg);
-  -ms-transform:translateX(-40px) rotate(90deg);
-  -o-transform:translateX(-40px) rotate(90deg);
-  transform:translateX(-40px) rotate(90deg);
-}
-.btnGroup .nextText{
-  -webkit-transform:translateX(-58px) rotate(90deg);
-  -moz-transform:translateX(-58px) rotate(90deg);
-  -ms-transform:translateX(-58px) rotate(90deg);
-  -o-transform:translateX(-58px) rotate(90deg);
-  transform:translateX(-58px) rotate(90deg);
+.btnGroup .next img{
+  margin-left:15px;
 }
 .btnGroup .btnModal{
   width:56px;
   height:56px;
-  margin:0;
-  top:unset;
+  margin:0 0 0 -28px;
+  top:auto;
   left:50%;
   bottom:100px;
   background:url(../../main/img/mainSplite.png) no-repeat 0 0;
-  border:1px solid #000;
 }
+.modalPage{
+  display:none;
+  margin-left:-482px;
+  padding:30px 40px 30px 30px;
+  position:absolute;
+  bottom:0;
+  left:50%;
+  z-index: 1;
+  background-color:#fff;
+  overflow:hidden;
+}
+.modalPage > div{
+  float:left;
+  width:250px;
+  margin-right:48px;
+  position:relative;
+}
+.modalPage h2{
+  font-size:16px;
+  height:34px;
+  border-bottom:2px solid #000;
+}
+.firstDiv h2{
+  font-size:22px;
+  border-bottom:0 none;
+}
+.modalPage .arteList{
+  height:62px;
+  margin-top:15px;
+  overflow:hidden;
+}
+.modalPage strong{
+  display:block;
+  font-size:14px;
+  margin-bottom:10px;
+}
+.arteList li{
+  display:none;
+}
+.arteList li.on{
+  display:block
+}
+.modalPage .ellipsisText{
+  display:block;
+  height:36px;
+  font-size:12px;
+  color:#888;
+  line-height:18px;
+  letter-spacing: -0.5px;
+  word-break: keep-all;
+  overflow:hidden;
+}
+.firstDiv ul{
+  width:110%;
+  height:auto;
+  margin-top:5px;
+  overflow:hidden
+}
+.firstDiv li{
+  float:left;
+  width:117px;
+  height:35px;
+  margin-right:15px;
+  position:relative;
+  line-height: 35px;
+  border-bottom:1px solid #ddd
+}
+.firstDiv li:after{
+  content:"";
+  display:inline-block;
+  width:6px;
+  height:10px;
+  position:absolute;
+  top:12px;
+  right:10px;
+  vertical-align: middle;
+  background:url(../../main/img/mainSplite.png) no-repeat -130px -20px;
+}
+.modalPage .modalBtnGroup{
+  position:absolute;
+  top:0;
+  right:0;
+  font-size:0;
+}
+.modalBtnGroup button{
+  width:20px;
+  height:20px;
+  background:url(../../main/img/mainSplite.png) no-repeat -123px 5px;
+}
+.modalBtnGroup .next{
+  background-position:-123px -15px;
+}
+.modalPage .modalPageClose{
+  display:block;
+  width: 56px;
+  height: 56px;
+  position:absolute;
+  top:0;
+  right:0;
+  background:url(../../main/img/mainSplite.png) no-repeat -60px 0;
+}
+/*.modalPageClose span{*/
+/*display:block;*/
+/*width: 20px;*/
+/*height:3px;*/
+/*background-color:#fff;*/
+/*-webkit-border-radius:3px;*/
+/*-moz-border-radius:3px;*/
+/*border-radius:3px;*/
+/*}*/
+/*.modalPageClose span:nth-child(1){ transform: translateY(2px) rotate(-45deg); }*/
+/*.modalPageClose span:nth-child(2){ transform: translateY(-1px) rotate(-135deg); }*/

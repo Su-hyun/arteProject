@@ -18,22 +18,22 @@ var urlPath = location.pathname,
           this.slideMovement(select, idx, "-100%", 0);
         }
       },
-      btnText : function(select, pText, nText, index){
+      btnText : function(select, pSelect, nSelect, index){
         var leng = select.length,
           prevIndex = index - 1,
           nextIndex = index + 1,
-          prevInnerText = select[prevIndex],
-          nextInnerText = select[nextIndex];
-        pText.text(prevInnerText);
-        nText.text(nextInnerText);
+          prevInnerUrl = select[prevIndex],
+          nextInnerUrl = select[nextIndex];
+        pSelect.attr('src',prevInnerUrl);
+        nSelect.attr('src',nextInnerUrl);
         if (index == leng - 1) {
           nextIndex = 0;
-          nextInnerText = select[nextIndex];
-          nText.text(nextInnerText);
+          nextInnerUrl = select[nextIndex];
+          nSelect.attr('src',nextInnerUrl);
         } else if (index == 0) {
           prevIndex = leng - 1;
-          prevInnerText = select[prevIndex];
-          pText.text(prevInnerText);
+          prevInnerUrl = select[prevIndex];
+          pSelect.attr('src',prevInnerUrl);
         }
       },
       onMovement : function(select, index){
@@ -60,12 +60,6 @@ var urlPath = location.pathname,
         $('body').append('<div class="blind"></div>');
         $('.blind').fadeTo(sec,0.7);
       },
-      subMuneSize : function (win) {
-        var sum = (win - 1100) / 2 + 250;
-        console.log(win);
-        console.log(sum);
-        return sum;
-      },
       multiSlideMovement : function(select, index, start, end){
         var leng = select.length;
         select.eq(index).addClass('on').siblings().removeClass('on');
@@ -80,11 +74,3 @@ var urlPath = location.pathname,
         }
       }
     };
-
-$(window).on({
-  resize : function () {
-    var winWID = $(window).width();
-    windowWID = winWID;
-  }
-});
-$(window).trigger("resize");

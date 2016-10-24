@@ -6,7 +6,8 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-html,body{width:100%; height:100%; overflow:auto; -webkit-overflow-scrolling:touch;}
+header, article, section, nav, footer{ display: block;}
+html,body{width:100%; height:100%; -webkit-overflow-scrolling:touch;}
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,fieldset,p,button{margin:0;padding:0}
 body{*word-break:break-all; word-break: break-all}
 img,fieldset,iframe,button{border:0 none}
@@ -21,7 +22,7 @@ a:active, button:active{outline:none}
 a{display:block; text-decoration:none; color:#000;}
 a:hover,
 a:link{text-decoration:none;}
-legend{*width:0}
+legend{*width:0; width:0; height:0; font-size:0; position:absolute; z-index: -1;}
 table{width:100%;border-collapse:collapse;border-spacing:0; table-layout: fixed; text-align:center;}
 caption{
   width:0;
@@ -72,7 +73,7 @@ figure{
 /* --- resource class --- */
 .ir{display:block;text-indent:100%;white-space:nowrap;overflow:hidden}
 .ellipsis{overflow:hidden;white-space:nowrap;text-overflow:ellipsis;-o-text-overflow:ellipsis}
-.clearFix::after{content:"";display:block;clear:both}
+.clearFix:after{content:"";display:block;clear:both}
 .alignMiddle{display:inline-block; width:0; height:100%; vertical-align:middle; font-size:0;}
 .ellipsis{
   overflow:hidden; white-space: nowrap; text-overflow: ellipsis;
@@ -89,36 +90,41 @@ figure{
   right:0;
   bottom:90px;
   left:0;
-  z-index: 5;
+  z-index: 10;
   background-color:#f18b67;
   opacity: 0;
 }
 
 
 /* -- layout -- */
+.mainPageWrap{
+  overflow:hidden
+}
 .container{
   width:1100px;
+  height:100%;
   margin:0 auto;
 }
-header{
+#header{
   height:100px;
 }
 .headerLine{
   height:100px;
+  padding-top:15px;
   position:relative;
   font-size:0;
 }
 .headerLine h1,
 .headerLine nav,
 .headerLine li{
-  display:inline-block;
-  vertical-align: middle;
+  float:left;
 }
 .headerLine h1{
   font-size:30px;
 }
 .lnb{
-  margin-left:95px;
+  margin-left:80px;
+  padding-top:15px;
 }
 .lnb li{
   margin-left:38px;
@@ -138,9 +144,34 @@ header{
   width:100%;
   height:5px;
   position:absolute;
-  top:63px;
+  top:65px;
   background-color:#f77f44
 }
+.lnb .colorType02:hover a{
+  color : #ee7e77
+}
+.lnb .colorType02:hover:after{
+  background-color:#ee7e77
+}
+.lnb .colorType03:hover a{
+  color : #f5cd60
+}
+.lnb .colorType03:hover:after{
+  background-color:#f5cd60
+}
+.lnb .colorType04:hover a{
+  color : #ae6fa9
+}
+.lnb .colorType04:hover:after{
+  background-color:#ae6fa9
+}
+/*.lnb .colorType05:hover a{*/
+  /*color : #f77f44*/
+/*}*/
+/*.lnb .colorType05:hover:after{*/
+  /*background-color:#f77f44*/
+/*}*/
+
 .lnb .lnbSubBtn {
   position:absolute;
   top:38px;
@@ -175,13 +206,12 @@ header{
 /*.btnSubMenu:active span:nth-child(3){ transform: translateY(-7px) rotate(-135deg); }*/
 
 
-article{
+#article{
   position:relative;
 }
 .subMenu{
   display:none;
   width:100%;
-  height:calc(100% - 90px);
   padding:40px 55px;
   position:absolute;
   top:0;
@@ -277,135 +307,23 @@ article{
 .subMenuList .disc{
   padding:0;
 }
-.modalPage{
-  display:none;
-  margin-left:-482px;
-  padding:30px 40px 30px 30px;
-  position:absolute;
-  bottom:0;
-  left:50%;
-  z-index: 1;
-  background-color:#fff;
-  overflow:hidden;
-}
-.modalPage > div{
-  float:left;
-  width:250px;
-  margin-right:48px;
-  position:relative;
-}
-.modalPage h2{
-  font-size:16px;
-  height:34px;
-  border-bottom:2px solid #000;
-}
-.firstDiv h2{
-  font-size:22px;
-  border-bottom:0 none;
-}
-.modalPage .arteList{
-  height:62px;
-  margin-top:15px;
-  overflow:hidden;
-}
-.modalPage strong{
-  display:block;
-  font-size:14px;
-  margin-bottom:10px;
-}
-.arteList li{
-  display:none;
-}
-.arteList li.on{
-  display:block
-}
-.modalPage .ellipsisText{
-  display:block;
-  height:36px;
-  font-size:12px;
-  color:#888;
-  line-height:18px;
-  letter-spacing: -0.5px;
-  word-break: keep-all;
-  overflow:hidden;
-}
-.firstDiv ul{
-  width:110%;
-  height:auto;
-  margin-top:5px;
-  overflow:hidden
-}
-.firstDiv li{
-  float:left;
-  width:117px;
-  height:35px;
-  margin-right:15px;
-  position:relative;
-  line-height: 35px;
-  border-bottom:1px solid #ddd
-}
-.firstDiv li:after{
-  content:"";
-  display:inline-block;
-  width:6px;
-  height:10px;
-  position:absolute;
-  top:12px;
-  right:10px;
-  vertical-align: middle;
-  background:url(../../main/img/mainSplite.png) no-repeat -130px -20px;
-}
-.modalPage .modalBtnGroup{
-  position:absolute;
-  top:0;
-  right:0;
-  font-size:0;
-}
-.modalBtnGroup button{
-  width:20px;
-  height:20px;
-  background:url(../../main/img/mainSplite.png) no-repeat -123px 5px;
-}
-.modalBtnGroup .next{
-  background-position:-123px -15px;
-}
-.modalPage .modalPageClose{
-  display:block;
-  width: 56px;
-  height: 56px;
-  position:absolute;
-  top:0;
-  right:0;
-  background:url(../../main/img/mainSplite.png) no-repeat -60px 0;
-}
-/*.modalPageClose span{*/
-  /*display:block;*/
-  /*width: 20px;*/
-  /*height:3px;*/
-  /*background-color:#fff;*/
-  /*-webkit-border-radius:3px;*/
-  /*-moz-border-radius:3px;*/
-  /*border-radius:3px;*/
-/*}*/
-/*.modalPageClose span:nth-child(1){ transform: translateY(2px) rotate(-45deg); }*/
-/*.modalPageClose span:nth-child(2){ transform: translateY(-1px) rotate(-135deg); }*/
 
-footer{
+#footer{
   min-width:1265px;
   height:90px;
   font-size:0;
   text-align:center;
-  border-top:1px solid red
 }
-footer address,
-footer nav{
+#footer address,
+#footer .nav{
   display:inline-block;
   vertical-align: middle;
   font-size:12px;
   text-align: left;
   line-height: 1.5;
+  overflow: hidden;
 }
-footer nav{
+#footer .nav{
   margin-left:250px;
 }
 .footGnb li{
@@ -418,22 +336,23 @@ footer nav{
   line-height:32px;
   border-bottom:1px solid #ddd;
 }
-.footGnb li:first-child{
+.footGnb > li:first-child{
   margin-left:0;
   font-size:14px;
 }
-.footGnb .toggleMenu{
+.footGnb .toggleMenu,
+.familyList li{
   width:184px;
   padding-left:15px;
   border:1px solid #ddd;
 }
-.footGnb li:before,
+.footGnb > li:before,
 .footGnb li:after{
   content:"";
   position:absolute;
   background:url(../img/footerSplite.png) no-repeat;
 }
-.footGnb li:first-child:before{
+.footGnb > li:first-child:before{
   width:13px;
   height:13px;
   top:11px;
@@ -454,4 +373,16 @@ footer nav{
   top: 12px;
   right:13px;
   background-position:0 0;
+}
+.familyList{
+  display:none;
+  position:absolute;
+  bottom:31px;
+  left:-1px;
+}
+.familyList li{
+  float:none;
+  margin:0;
+  background-color:#fff;
+  border-bottom:0 none;
 }
