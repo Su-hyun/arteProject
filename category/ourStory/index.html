@@ -5,10 +5,11 @@
   <meta charset="UTF-8">
   <!--<meta name="viewport"-->
   <!--content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">-->
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=1920, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <!--<meta http-equiv="X-UA-Compatible" content="ie=edge">-->
   <meta name="Filename" content="index.html"/>
   <meta name="Status" content="Draft"/>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
   <meta http-equiv="Expire" content="-1"/>
   <meta http-equiv="Cache-Control" content="no-cache"/>
   <meta http-equiv="Pragma" content="no-cache"/>
@@ -21,22 +22,23 @@
   <!--[if IE 9 ]>    <html xmlns="http://www.w3.org/1999/xhtml" lang="ko-KR" class="ie9"> <![endif]-->
   <!--[if (gt IE 9)|!(IE)]>	<html lang="ko" class="no-js"> <![endif]-->
   <title>아르떼누에보</title>
+  <!-- [if it IE 9]> <script src="./lib/html5shiv/dist/html5shiv/js"></script><![endif]-->
   <link rel="stylesheet" href="./lib/normalize-css/normalize.css">
   <link rel="stylesheet" href="./resource/css/fonts.css">
   <link rel="stylesheet" href="./resource/css/common.css">
   <link rel="stylesheet" href="./resource/css/category.css">
 </head>
-<body>
-<header>
-  <div class="container headerLine">
-    <h1><a href="/">ARTE NUEVO</a></h1>
-    <nav class="lnb">
-      <ul>
-        <li><a href="category/arteNuevo">ARTE NUEVO</a></li>
-        <li><a href="category/arteValor">ARTE VALOR</a></li>
-        <li><a href="category/arteNormal">ARTE NORMAL</a></li>
-        <li><a href="category/arteConcierto">ARTE CONCIERTO</a></li>
-        <li><a href="category/ourStory">OUR STORY</a></li>
+<body class="categoryWrap">
+<div id="header">
+  <div class="container headerLine clearFix">
+    <h1><a href="/"><img src="./resource/img/logo.png" alt="ARTE NUEVO"></a></h1>
+    <div class="lnb">
+      <ul class="clearFix">
+        <li class="colorType01"><a href="category/arteNuevo">ARTE NUEVO</a></li>
+        <li class="colorType02"><a href="category/arteValor">ARTE VALOR</a></li>
+        <li class="colorType03"><a href="category/arteNormal">ARTE NORMAL</a></li>
+        <li class="colorType04"><a href="category/arteConcierto">ARTE CONCIERTO</a></li>
+        <li class="colorType05"><a href="category/ourStory">OUR STORY</a></li>
         <li class="lnbSubBtn">
           <button class="btnSubMenu">
             <span class="ir">열기</span>
@@ -45,55 +47,320 @@
           </button>
         </li>
       </ul>
-    </nav>
+    </div>
     <span class="alignMiddle"></span>
   </div>
-</header>
-<article>
-  <section class="subVisual">
-    <h1>
-      Arte Nuevo
-    </h1>
-    <span class="alignMiddle"></span>
-  </section>
-  <section>
-    <nav>
-      <ul>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
+</div>
+<div id="article" class="categoryContent">
+  <div class="subVisual">
+    <img src="" alt="Arte Nuevo">
+  </div>
+  <div class="tabsSection">
+    <div class="tabsNav">
+      <ul class="tabsLink typeList02 container clearFix">
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">New Story</a></li>
       </ul>
-    </nav>
-    <div id="" class="tabs">
-      <div class="container"></div>
     </div>
-    <div id="" class="tabs">
-      <div class="container"></div>
+    <div id="tabsFirst" class="tabs ourStory">
+      <div class="container">
+        <div class="tabsTitleText">
+          <h2>
+            <img src="" alt="Our Story 갤러리">
+          </h2>
+        </div>
+        <div class="contentWrap ourStoryBoard">
+          <div class="search">
+            <form action="">
+              <fieldset>
+                <legend>검색</legend>
+                <input type="search" name="" placeholder="검색어 입력">
+                <input type="submit" value="검색">
+              </fieldset>
+            </form>
+          </div>
+          <ul class="listWrap galleryWrap clearFix">
+            <li>
+              <div class="thumb">
+                <img src="" alt="갤러리 썸네일">
+              </div>
+              <p>
+                면접관 역량 강화과정
+              </p>
+              <span class="galleryDate">2014.08.30</span>
+            </li>
+            <li>
+              <div class="thumb">
+                <img src="" alt="갤러리 썸네일">
+              </div>
+              <p>
+                면접관 역량 강화과정
+              </p>
+              <span class="galleryDate">2014.08.30</span>
+            </li>
+            <li>
+              <div class="thumb">
+                <img src="" alt="갤러리 썸네일">
+              </div>
+              <p>
+                면접관 역량 강화과정
+              </p>
+              <span class="galleryDate">2014.08.30</span>
+            </li>
+            <li>
+              <div class="thumb">
+                <img src="" alt="갤러리 썸네일">
+              </div>
+              <p>
+                면접관 역량 강화과정
+              </p>
+              <span class="galleryDate">2014.08.30</span>
+            </li>
+            <li>
+              <div class="thumb">
+                <img src="" alt="갤러리 썸네일">
+              </div>
+              <p>
+                면접관 역량 강화과정
+              </p>
+              <span class="galleryDate">2014.08.30</span>
+            </li>
+            <li>
+              <div class="thumb">
+                <img src="" alt="갤러리 썸네일">
+              </div>
+              <p>
+                면접관 역량 강화과정
+              </p>
+              <span class="galleryDate">2014.08.30</span>
+            </li>
+            <li>
+              <div class="thumb">
+                <img src="" alt="갤러리 썸네일">
+              </div>
+              <p>
+                면접관 역량 강화과정
+              </p>
+              <span class="galleryDate">2014.08.30</span>
+            </li>
+            <li>
+              <div class="thumb">
+                <img src="" alt="갤러리 썸네일">
+              </div>
+              <p>
+                면접관 역량 강화과정
+              </p>
+              <span class="galleryDate">2014.08.30</span>
+            </li>
+          </ul>
+          <div class="galleryModal modalPage">
+            <div class="modalHeader">
+              <h3>
+                썸네일 제목
+              </h3>
+            </div>
+            <div class="modalBody">
+              <div class="imgContent">
+                <img src="" alt="갤러리사진">
+                <p class="imgCaption">
+                  사진 설명입니다.
+                </p>
+              </div>
+              <div class="btnWrap">
+                <button class="modalPageClose bodyPosition">확인</button>
+                <button class="modalPageClose headerPosition ir">닫기</button>
+              </div>
+              <ul class="galleryList">
+                <li>
+                  <a href="">
+                    <span class="galleryListNav">이전글</span>
+                    <span class="galleryListTitle ellipsis">이전글 썸네일 제목</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <span class="galleryListNav">다음글</span>
+                    <span class="galleryListTitle ellipsis">다음글 썸네일 제목</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="paging">
+            <a href="">1</a>
+            <a href="">2</a>
+            <a href="">3</a>
+            <a href="">4</a>
+            <a href="">5</a>
+            <a href="">6</a>
+            <a href="">7</a>
+            <a href="">8</a>
+            <a href="">9</a>
+            <a href="">10</a>
+          </div>
+        </div>
+      </div>
     </div>
-    <div id="" class="tabs">
-      <div class="container"></div>
-    </div>
-    <div id="" class="tabs">
-      <div class="container"></div>
-    </div>
-  </section>
-  <div>
-    <div class="container">
-      <p></p>
-      <button></button>
-      <div class="">
-        <div></div>
-        <div>
-          <form>
-
-          </form>
+    <div id="tabsSecond" class="tabs ourStory">
+      <div class="container">
+        <div class="tabsTitleText">
+          <h2 class="tabsTitle">
+            <img src="" alt="Our Story 공지사항">
+          </h2>
+        </div>
+        <div class="contentWrap ourStoryBoard">
+          <div class="search">
+            <form action="">
+              <fieldset>
+                <legend>검색</legend>
+                <input type="search" name="" placeholder="검색어 입력">
+                <input type="submit" value="검색">
+              </fieldset>
+            </form>
+          </div>
+          <ul class="listWrap ourStoryNotice">
+            <li>
+              <p class="clearFix titleLine">
+                <span class="boardNum">10</span>
+                <span class="noticeTitle">공지사항 제목</span>
+                <span class="updateDate">07.11</span>
+              </p>
+              <div class="noticeContext">
+                <p>
+                  본문 내용
+                </p>
+              </div>
+            </li>
+            <li>
+              <p class="clearFix titleLine">
+                <span class="boardNum">9</span>
+                <span class="noticeTitle">공지사항 제목</span>
+                <span class="updateDate">07.11</span>
+              </p>
+              <div class="noticeContext">
+                <p>
+                  본문 내용
+                </p>
+              </div>
+            </li>
+            <li>
+              <p class="clearFix titleLine">
+                <span class="boardNum">8</span>
+                <span class="noticeTitle">공지사항 제목</span>
+                <span class="updateDate">07.11</span>
+              </p>
+              <div class="noticeContext">
+                <p>
+                  본문 내용
+                </p>
+              </div>
+            </li>
+            <li>
+              <p class="clearFix titleLine">
+                <span class="boardNum">7</span>
+                <span class="noticeTitle">공지사항 제목</span>
+                <span class="updateDate">07.11</span>
+              </p>
+              <div class="noticeContext">
+                <p>
+                  본문 내용
+                </p>
+              </div>
+            </li>
+            <li>
+              <p class="clearFix titleLine">
+                <span class="boardNum">6</span>
+                <span class="noticeTitle">공지사항 제목</span>
+                <span class="updateDate">07.11</span>
+              </p>
+              <div class="noticeContext">
+                <p>
+                  본문 내용
+                </p>
+              </div>
+            </li>
+            <li>
+              <p class="clearFix titleLine">
+                <span class="boardNum">5</span>
+                <span class="noticeTitle">공지사항 제목</span>
+                <span class="updateDate">07.11</span>
+              </p>
+              <div class="noticeContext">
+                <p>
+                  본문 내용
+                </p>
+              </div>
+            </li>
+            <li>
+              <p class="clearFix titleLine">
+                <span class="boardNum">4</span>
+                <span class="noticeTitle">공지사항 제목</span>
+                <span class="updateDate">07.11</span>
+              </p>
+              <div class="noticeContext">
+                <p>
+                  본문 내용
+                </p>
+              </div>
+            </li>
+            <li>
+              <p class="clearFix titleLine">
+                <span class="boardNum">3</span>
+                <span class="noticeTitle">공지사항 제목</span>
+                <span class="updateDate">07.11</span>
+              </p>
+              <div class="noticeContext">
+                <p>
+                  본문 내용
+                </p>
+              </div>
+            </li>
+            <li>
+              <p class="clearFix titleLine">
+                <span class="boardNum">2</span>
+                <span class="noticeTitle">공지사항 제목</span>
+                <span class="updateDate">07.11</span>
+              </p>
+              <div class="noticeContext">
+                <p>
+                  본문 내용
+                </p>
+              </div>
+            </li>
+            <li>
+              <p class="clearFix titleLine">
+                <span class="boardNum">1</span>
+                <span class="noticeTitle">공지사항 제목</span>
+                <span class="updateDate">07.11</span>
+              </p>
+              <div class="noticeContext">
+                <p>
+                  본문 내용
+                </p>
+              </div>
+            </li>
+          </ul>
+          <div class="paging">
+            <a href="">1</a>
+            <a href="">2</a>
+            <a href="">3</a>
+            <a href="">4</a>
+            <a href="">5</a>
+            <a href="">6</a>
+            <a href="">7</a>
+            <a href="">8</a>
+            <a href="">9</a>
+            <a href="">10</a>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</article>
-<section class="subMenu">
+  <div class="forTop">
+    <a href="#"><img src="../../resource/img/forTop.png" alt="top"></a>
+  </div>
+</div>
+<div class="subMenu">
   <div class="clearFix">
     <span class="lineBar"></span>
     <button class="subMenuClose">
@@ -104,7 +371,7 @@
       </i>
     </button>
   </div>
-  <nav class="subMenuList">
+  <div class="subMenuList">
     <dl>
       <dt>Arte Nuevo</dt>
       <dd><a href="">Arte Nuevo 소개</a></dd>
@@ -177,21 +444,27 @@
       <dd><a href="">Gallery(갤러리)</a></dd>
       <dd><a href="">New Story(새소식)</a></dd>
     </dl>
-  </nav>
-</section>
-<footer>
+  </div>
+</div>
+<div id="footer">
   <address>
     서울시용산구한강로가4-1 영구빌딩층 | Tel: 02-737-2160~2 | FAX: 02-737-2158<br>
     (주)에이치케이컨설팅 | 대표자명 : 하동수 | 사업자번호:101-86-22994 | Copyright(c) Since 2016. H&K Consulting All rights reserved.
   </address>
-  <nav class="footGnb">
-    <ul class="clearFix">
+  <div class="nav">
+    <ul class="footGnb clearFix">
       <li><a href="#">문의하기<i></i></a></li>
-      <li class="toggleMenu"><a href="#">Family Site</a></li>
+      <li class="toggleMenu">
+        <a href="#">Family Site</a>
+        <ul class="familyList">
+          <li><a href="http://www.hnkc.co.kr">www.hnkc.co.kr</a></li>
+          <li><a href="http://www.hnkt.co.kr">www.hnkt.co.kr</a></li>
+        </ul>
+      </li>
     </ul>
-  </nav>
+  </div>
   <span class="alignMiddle"></span>
-</footer>
+</div>
 <script type="text/javascript" data-main="./requireConfig" src="./lib/requirejs/require.js" charset="UTF-8"></script>
 </body>
 </html>
