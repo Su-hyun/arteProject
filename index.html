@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <!--<meta name="viewport"-->
   <!--content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">-->
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=1920, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta name="Filename" content="index.html"/>
   <meta name="Status" content="Draft"/>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
   <meta http-equiv="Expire" content="-1"/>
   <meta http-equiv="Cache-Control" content="no-cache"/>
   <meta http-equiv="Pragma" content="no-cache"/>
@@ -19,23 +19,25 @@
   <!--[if IE 8 ]>    <html xmlns="http://www.w3.org/1999/xhtml" lang="ko-KR" class="ie8"> <![endif]-->
   <!--[if IE 9 ]>    <html xmlns="http://www.w3.org/1999/xhtml" lang="ko-KR" class="ie9"> <![endif]-->
   <!--[if (gt IE 9)|!(IE)]>	<html lang="ko" class="no-js"> <![endif]-->
+  <!-- [if it IE 9]> <script src="./lib/html5shiv/dist/html5shiv/js"></script><![endif]-->
+
   <title>아르떼누에보</title>
   <link rel="stylesheet" href="./lib/normalize-css/normalize.css">
   <link rel="stylesheet" href="./resource/css/fonts.css">
   <link rel="stylesheet" href="./resource/css/common.css">
   <link rel="stylesheet" href="./resource/css/main.css">
 </head>
-<body>
-<header>
-  <div class="container headerLine">
-    <h1><a href="/">ARTE NUEVO</a></h1>
-    <nav class="lnb">
-      <ul>
-        <li><a href="category/arteNuevo">ARTE NUEVO</a></li>
-        <li><a href="category/arteValor">ARTE VALOR</a></li>
-        <li><a href="category/arteNormal">ARTE NORMAL</a></li>
-        <li><a href="category/arteConcierto">ARTE CONCIERTO</a></li>
-        <li><a href="category/ourStory">OUR STORY</a></li>
+<body class="mainPageWrap">
+<div id="header">
+  <div class="container headerLine clearFix">
+    <h1><a href="/"><img src="./resource/img/logo.png" alt="ARTE NUEVO"></a></h1>
+    <div class="lnb">
+      <ul class="clearFix">
+        <li class="colorType01"><a href="category/arteNuevo">ARTE NUEVO</a></li>
+        <li class="colorType02"><a href="category/arteValor">ARTE VALOR</a></li>
+        <li class="colorType03"><a href="category/arteNormal">ARTE NORMAL</a></li>
+        <li class="colorType04"><a href="category/arteConcierto">ARTE CONCIERTO</a></li>
+        <li class="colorType05"><a href="category/ourStory">OUR STORY</a></li>
         <li class="lnbSubBtn">
           <button class="btnSubMenu">
             <span class="ir">열기</span>
@@ -44,14 +46,18 @@
           </button>
         </li>
       </ul>
-    </nav>
+    </div>
     <span class="alignMiddle"></span>
   </div>
-</header>
-<article>
-  <section class="mainVisual">
-    <article class="on">
-      <div class="visualText textTypeValor">
+</div>
+<div id="article">
+  <div id="section" class="mainVisual">
+    <div class="article on">
+      <div class="imgType">
+        <a href="category/arteValor"><img src="./main/img/arteValor.jpg" alt="Arte Valor"></a>
+      </div>
+      <!-- 이미지로 대체
+      <div class="visualText">
         <p>
           창의적 감성 솔루션, 문화예술 교육의 가치를 통한 자기주도적 감성융합교육
           <span class="title">아르떼발로</span>
@@ -61,9 +67,14 @@
         </h1>
       </div>
       <span class="alignMiddle"></span>
-    </article>
-    <article>
-      <div class="visualText textTypeNormal">
+      -->
+    </div>
+    <div class="article">
+      <div class="imgType">
+        <a href="category/arteNormal"><img src="./main/img/arteNormal.jpg" alt="Arte Normal"></a>
+      </div>
+      <!-- 이미지로 대체
+      <div class="visualText">
         <p>
           예술과 인문학의 살아 움직이는 즐겁고 유쿄한 강의와 예술처럼
           <span class="title">아르떼노르말</span>
@@ -73,9 +84,14 @@
         </h1>
       </div>
       <span class="alignMiddle"></span>
-    </article>
-    <article>
-      <div class="visualText textTypeConcierto">
+      -->
+    </div>
+    <div class="article">
+      <div class="imgType">
+        <a href="category/arteConcierto"><img src="./main/img/arteConcierto.jpg" alt="Arte Concierto"></a>
+      </div>
+      <!--  이미지로 대체
+      <div class="visualText">
         <p>
           기획형 공연예술로 고객사의 차별화된 스토리를 담는 스토리텔링형 문화예술 콘텐츠
           <span class="title">아르떼꼰시에르토</span>
@@ -85,9 +101,10 @@
         </h1>
       </div>
       <span class="alignMiddle"></span>
-    </article>
-  </section>
-  <section class="modalPage">
+      -->
+    </div>
+  </div>
+  <div class="modalPage">
     <div class="firstDiv">
       <h2>
         Arte Nuevo
@@ -167,14 +184,14 @@
       </div>
     </div>
     <button class="modalPageClose ir">닫기</button>
-  </section>
-  <div class="btnGroup">
-    <button class="next"><span class="btnText nextText">Arte Normal</span></button>
-    <button class="prev"><span class="btnText">Arte Concierto</span></button>
-    <button class="btnModal">더보기</button>
   </div>
-</article>
-<section class="subMenu">
+  <div class="btnGroup">
+    <button class="next"><img src="./main/img/arteNormal.png" alt="다음보기"></button>
+    <button class="prev"><img src="./main/img/arteConcierto.png" alt="이전보기"></button>
+    <button class="btnModal ir">더보기</button>
+  </div>
+</div>
+<div class="subMenu">
   <div class="clearFix">
     <span class="lineBar"></span>
     <button class="subMenuClose">
@@ -185,7 +202,7 @@
       </i>
     </button>
   </div>
-  <nav class="subMenuList">
+  <div class="subMenuList">
     <dl>
       <dt>Arte Nuevo</dt>
       <dd><a href="">Arte Nuevo 소개</a></dd>
@@ -258,22 +275,27 @@
       <dd><a href="">Gallery(갤러리)</a></dd>
       <dd><a href="">New Story(새소식)</a></dd>
     </dl>
-  </nav>
-</section>
-<footer>
+  </div>
+</div>
+<div id="footer">
   <address>
     서울시용산구한강로가4-1 영구빌딩층 | Tel: 02-737-2160~2 | FAX: 02-737-2158<br>
     (주)에이치케이컨설팅 | 대표자명 : 하동수 | 사업자번호:101-86-22994 | Copyright(c) Since 2016. H&K Consulting All rights reserved.
   </address>
-  <nav class="footGnb">
-    <ul class="clearFix">
+  <div class="nav">
+    <ul class="footGnb clearFix">
       <li><a href="#">문의하기<i></i></a></li>
-      <li class="toggleMenu"><a href="#">Family Site</a></li>
+      <li class="toggleMenu">
+        <a href="#">Family Site</a>
+        <ul class="familyList">
+          <li><a href="http://www.hnkc.co.kr">www.hnkc.co.kr</a></li>
+          <li><a href="http://www.hnkt.co.kr">www.hnkt.co.kr</a></li>
+        </ul>
+      </li>
     </ul>
-  </nav>
+  </div>
   <span class="alignMiddle"></span>
-</footer>
-<!--<div class="blind"></div>-->
+</div>
 <script type="text/javascript" data-main="./requireConfig" src="./lib/requirejs/require.js" charset="UTF-8"></script>
 </body>
 </html>
