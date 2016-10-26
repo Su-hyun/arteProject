@@ -4,7 +4,7 @@ define(['arteProject'], function (arteProject) {
   console.log(urlPath);
 
   var $body = $('body'),
-      $mainSlide = $('.mainVisual article'),
+      $mainSlide = $('.mainVisual .article'),
       $btnGroup = $('.btnGroup'),
       $prevImg = $('.prev img'),
       $nextImg = $('.next img'),
@@ -21,9 +21,7 @@ define(['arteProject'], function (arteProject) {
     resize : function(){
      var winHEI = $(this).height(),
          $article = $('#article');
-
       if(urlPath === '/') $article.css('height',winHEI - 90);
-
     }
   });
   $(window).trigger("resize");
@@ -90,7 +88,7 @@ define(['arteProject'], function (arteProject) {
 
   $modalPage.on('click', 'button', function () {
     var $this = $(this),
-        $parentsDiv = $this.parents('div'),
+        $parentsDiv = $this.parents('.thumbTextList'),
         $siblingsLi = $parentsDiv.find('li');
     idx = $parentsDiv.find('li.on').index();
     if($this.is('.next')){

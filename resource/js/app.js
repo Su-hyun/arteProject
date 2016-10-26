@@ -1,6 +1,5 @@
 'use strict';
 var urlPath = location.pathname,
-    windowWID,
     idx,
     multiIdx = [],
     flag = true,
