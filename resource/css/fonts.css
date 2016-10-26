@@ -31,7 +31,7 @@
   src: url(../fonts/NotoSansCJKkr-Bold.otf);
 }
 body,h1,h2,h3,h4,h5,h6,p,input,button,pre{
-  font-family:'NotoSansCJKkr';
+  font-family:'NotoSansCJKkr',sans-serif;
 }
 
 body,p,input,button,pre{
