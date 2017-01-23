@@ -15,4 +15,4 @@ html, css, javascript, jQuery, requierJS
 90%
 
 **URL**
-http://artenuevo.cafe24.com
+http://artenuevo.co.kr/
